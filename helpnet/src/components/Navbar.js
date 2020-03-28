@@ -6,8 +6,11 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import logo from "../images/logo.png";
+import logo from "../images/logo_dark.png";
 import Home from "../screens/HomeScreen";
+import NeedHelp from "../screens/NeedHelpScreen";
+import OfferHelp from "../screens/OfferHelpScreen";
+import TransportHelp from "../screens/TransportHelpScreen";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -60,7 +63,7 @@ export default function Navbar() {
         <img
           src={logo}
           alt="logo"
-          style={{ width: "10vh", position: "absolute" }}
+          style={{ width: "12vh", position: "absolute" }}
         ></img>
         <Tabs
           value={value}
@@ -82,13 +85,13 @@ export default function Navbar() {
         <Home />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Dopyt
+        <NeedHelp />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Ponuka
+        <OfferHelp />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Transport
+        <TransportHelp />
       </TabPanel>
     </div>
   );
