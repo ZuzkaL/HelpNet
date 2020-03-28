@@ -6,7 +6,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import logo from "../images/logo_dark.png";
+import logo from "../images/logo-light.png";
 import Home from "../screens/HomeScreen";
 import NeedHelp from "../screens/NeedHelpScreen";
 import OfferHelp from "../screens/OfferHelpScreen";
@@ -59,11 +59,11 @@ export default function Navbar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color="#e4edf2" style={{ height: "8vh" }}>
+      <AppBar position="static" color="#e4edf2" style={{ height: "12vh" }}>
         <img
           src={logo}
           alt="logo"
-          style={{ width: "12vh", position: "absolute" }}
+          style={{ width: "16vh", position: "absolute" }}
         ></img>
         <Tabs
           value={value}
@@ -73,12 +73,12 @@ export default function Navbar() {
           variant="scrollable"
           scrollButtons="auto"
           aria-label="scrollable auto tabs example"
-          style={{ marginLeft: "10vh", height: "8vh" }}
+          style={{ marginLeft: "20vh", height: "12vh" }}
         >
-          <Tab label="O nás" {...a11yProps(0)} style={{ height: "8vh" }} />
-          <Tab label="Dopyt" {...a11yProps(1)} style={{ height: "8vh" }} />
-          <Tab label="Ponuka" {...a11yProps(2)} style={{ height: "8vh" }} />
-          <Tab label="Transport" {...a11yProps(3)} style={{ height: "8vh" }} />
+          <Tab label="O nás" {...a11yProps(0)} style={{ height: "12vh" }} />
+          <Tab label="Dopyt" {...a11yProps(1)} style={{ height: "12vh" }} />
+          <Tab label="Ponuka" {...a11yProps(2)} style={{ height: "12vh" }} />
+          <Tab label="Transport" {...a11yProps(3)} style={{ height: "12vh" }} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>

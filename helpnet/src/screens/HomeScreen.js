@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <div
       style={{
-        backgroundSize: "cover",
+        backgroundSize: "absolute",
         width: "100vw",
-        height: "100vh",
+        height: "88vh",
         position: "absolute",
         left: 0,
         right: 0
@@ -16,7 +16,7 @@ export default function Home() {
         style={{
           position: "absolute",
           left: 50,
-          top: 270,
+          top: 250,
           font: "Roboto 80 bold",
           fontSize: 80,
           width: 490,
@@ -31,7 +31,7 @@ export default function Home() {
           left: 50,
           font: "Roboto",
           fontSize: 32,
-          top: 600,
+          top: 500,
           width: 500,
           textAlign: "left"
         }}
